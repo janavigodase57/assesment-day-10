@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign Up</title>
+
+<style>
+
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background:#f5f5f5;
+font-family:Arial;
+}
+
+form{
+background:white;
+padding:30px;
+width:350px;
+box-shadow:0 0 10px gray;
+border-radius:10px;
+}
+
+input{
+width:100%;
+padding:10px;
+margin:10px 0;
+}
+
+button{
+width:100%;
+padding:10px;
+background:#ff5722;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+</style>
+
+</head>
+<body>
+
+<form onsubmit="signup(event)">
+<h2>Create Account</h2>
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email" required>
+
+<input type="password" placeholder="Password" required>
+
+<button>Sign Up</button>
+
+</form>
+
+<script>
+
+function signup(e){
+e.preventDefault();
+
+alert("Signup Successful!");
+
+window.location.href="index.html";
+}
+
+</script>
+
+</body>
+</html>
